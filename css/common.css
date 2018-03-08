@@ -30,9 +30,9 @@ img, input{
     vertical-align: top; /* CSS TRICK - 사용해야 아래에 공간이 남지 않는다 */
 
 }
-
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html,body{
+    font-family:"맑은 고딕","arial",sans-serif;
+    font-size: 14px;
+       /*  font-size:14px;
+    line-helght: 21px */
 }

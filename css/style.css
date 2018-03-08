@@ -306,17 +306,17 @@ header, main, footer{
 }
 
 .font_box{
-    position: relative;
-    top:10px;
     width: 140px;
     height: 25px;
     margin: 0 auto;
     text-indent: 10px;
     border: 1px solid #666;
+    font-weight: 600;
+    line-height: 25px;
+    margin-top:10px;
 }
 .font_box>a{
     display: block;
-    margin-top:1px;
 
 }
 
@@ -369,34 +369,39 @@ header, main, footer{
 }
 
 .title{
-    position: relative;
     display: block;
     font-size: 18px;
     font-weight: 600;
     margin-top:20px;
 }
 
-.title::before{
-    content:"";
+.exp>a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_box{
+    position: relative;
+    top:10px;
+    right: 30px;
     display: block;
-    position: absolute;
-    top:-5px;
-    right: 24px;
-    width: 30px;
-    height: 30px;
+    width: 34px;
+    height: 34px;
     border: 2px solid #ccc;
     border-radius: 50%;
     
 }
 
-.title::after{
+.title_box::after{
     content:"+";   
     display: block;
     position: absolute;
-    top:-12px;
-    right: 30px;
+    top:-7px;
+    right:6px;
     font-size:30px;
     color:#666;
+    font-weight: 600;
 
 }
 
@@ -594,7 +599,6 @@ footer{
 .flogo{
     width: 100%;
     height: 50px;
-    background: black;
     padding: 20px 0;
 }
 .flogo>a{
