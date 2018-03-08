@@ -399,19 +399,19 @@ header, main, footer{
     
 }
 
-.exp>a::after{
-    content:"+";   
-    display: block;
+.title_box>img{
     position: absolute;
-    top:0;
-    right:0;
-    width: 35px;
-    height: 35px;
-    font-size:30px;
-    color:#666;
-    font-weight: 600;
+    top:8px;
+    right: 9px;
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    
 
 }
+
+
 
 .sum1_exp1, .sum2_exp2, .sum3_exp3, .sum4_exp4{
     display: block;
