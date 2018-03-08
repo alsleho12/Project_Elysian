@@ -507,6 +507,7 @@ header, main, footer{
 }
 
 #partners>ul{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -515,7 +516,7 @@ header, main, footer{
 
 #partners>ul>li{
     position: relative;
-    width: 47%;
+    width: 45%;
     height: auto;
     margin: 20px auto 20px auto;
 }
@@ -532,8 +533,8 @@ header, main, footer{
     
 }
 
-#partners>ul>li>img{
-    width: 100%;
+#partners>ul>li>a>img{
+    width: 120px;
     height: auto;
     
 }
