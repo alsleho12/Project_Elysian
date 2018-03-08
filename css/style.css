@@ -391,8 +391,8 @@ header, main, footer{
     top:10px;
     right: 20px;
     display: block;
-    width: 34px;
-    height: 34px;
+    width: 35px;
+    height: 35px;
     border: 2px solid #ccc;
     border-radius: 50%;
    
@@ -403,8 +403,10 @@ header, main, footer{
     content:"+";   
     display: block;
     position: absolute;
-    top:-5px;
-    right:6px;
+    top:-6px;
+    right:13px;
+    width: 35px;
+    height: 35px;
     font-size:30px;
     color:#666;
     font-weight: 600;
