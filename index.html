@@ -199,7 +199,7 @@
                                 <li>
                                     <div class="font_box">
                                         <a href="#">MORE 
-                                            &nbsp;&nbsp;&nbsp;&nbsp;></a>
+                                            &nbsp;&nbsp;&nbsp;></a>
                                     </div>
                                 </li>
                             </ul>
@@ -432,7 +432,7 @@ $(".nav>a").click(function(){
     
 }); */
  /* 또다른 2단메뉴 설정 */
-$("#gnb>ul>li>a").click(function(){
+ $("#gnb>ul>li>a").click(function(){
     var dis = $(this).siblings(".depth2");
     /* 1.2단메뉴(.depth2)가 가지고 있는 display의 속성값을 변수안에 저장 */
     var two = dis.css("display")
@@ -441,6 +441,24 @@ $("#gnb>ul>li>a").click(function(){
     
     if(two == "none"){
         $(".depth2").slideUp();
+        dis.slideDown();
+    }else if(two == "block"){
+        dis.slideUp();
+    }
+    return false;
+});
+
+/*풋터 부분 아코디언메뉴*/
+
+$(".select>ul>li").click(function(){
+    var dis = $(this).find(".fdepth2");
+    /* 1.2단메뉴(.depth2)가 가지고 있는 display의 속성값을 변수안에 저장 */
+    var two = dis.css("display")
+    /* 2. depth2에 있는 여러정보가 담겨있는 tg라는 변수를 활용하여 그중 display의
+        속성값을 dis라는 변수 안에 넣어준다 */
+    
+    if(two == "none"){
+        $(".fdepth2").slideUp();
         dis.slideDown();
     }else if(two == "block"){
         dis.slideUp();

@@ -129,14 +129,14 @@ header, main, footer{
 }
 
 #gnb>ul>li:last-child>a::after{
-    content: "▶";
+    content: ">";
     display: block;
-    font-size: 23px;
+    font-size: 20px;
     width: 25px;
     height: 25px;
     position: absolute;
-    top: 50%;
-    right: 42px;
+    top: 45%;
+    right: 43px;
     transform: translateY(-50%);
 }
 
@@ -316,7 +316,7 @@ header, main, footer{
 }
 .font_box>a{
     display: block;
-    margin-top:4px;
+    margin-top:1px;
 
 }
 
@@ -352,6 +352,7 @@ header, main, footer{
 }
 
 .sum1, .sum2{
+    position: relative;
     width: 100%;
     height: auto;
     border: 1px solid #999;
@@ -392,8 +393,8 @@ header, main, footer{
     content:"+";   
     display: block;
     position: absolute;
-    top:-6px;
-    right: 32px;
+    top:-12px;
+    right: 30px;
     font-size:30px;
     color:#666;
 
@@ -422,12 +423,14 @@ header, main, footer{
     line-height: 21px;
     font-size: 14px;
     margin-top:-15px;
+    margin-bottom:70px;
 
 }
 
 .sum4_exp4{
-    margin-left:300px;
-    margin-top:20px;
+    position: absolute;
+    bottom:0;
+    right:30px;
     font-size: 16px;
     margin-bottom:20px;
     font-weight: normal;
@@ -586,6 +589,7 @@ footer{
     margin-left:20px;
     line-height: 24px;
     text-align: center;
+    margin-bottom:100px;
 }
 .flogo{
     width: 100%;
