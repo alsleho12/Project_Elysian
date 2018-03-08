@@ -373,16 +373,20 @@ header, main, footer{
     display: block;
     font-size: 18px;
     font-weight: 600;
-    margin-top:20px;
+    margin-top:15px;
+
+}
+
+.exp{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
 }
 
 .exp>a{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.title_box{
     position: relative;
     top:10px;
     right: 20px;
@@ -391,15 +395,16 @@ header, main, footer{
     height: 34px;
     border: 2px solid #ccc;
     border-radius: 50%;
+   
     
 }
 
-.title_box::after{
+.exp>a::after{
     content:"+";   
     display: block;
     position: absolute;
-    top:-4px;
-    right:7px;
+    top:-5px;
+    right:6px;
     font-size:30px;
     color:#666;
     font-weight: 600;
@@ -653,7 +658,7 @@ footer{
     position:relative;
     display:none;
     height:100%;
-    padding-left: 15px;
+    padding-left: 10px;
     overflow-x: hidden;
     overflow-y: auto;
     z-index:999;
