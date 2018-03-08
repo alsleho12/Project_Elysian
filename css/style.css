@@ -379,7 +379,7 @@ header, main, footer{
 
 .exp{
     width: 100%;
-    height: auto;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
