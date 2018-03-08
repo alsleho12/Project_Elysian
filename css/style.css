@@ -66,14 +66,14 @@ header, main, footer{
 }
 
 .logo{
-    width: 120px;
-    height: 60px;
+    width: 100%;
+    height: auto;
 }
 
 .logo>a{
     display: block;
-    width: 120px;
-    height: 60px;
+    width: 100%;
+    height: auto;
     
 }
 
@@ -356,7 +356,7 @@ header, main, footer{
     width: 100%;
     height: auto;
     border: 1px solid #999;
-    text-indent: 30px;
+    text-indent: 20px;
     margin-bottom:15px;
 }
 
@@ -384,7 +384,7 @@ header, main, footer{
 .title_box{
     position: relative;
     top:10px;
-    right: 30px;
+    right: 20px;
     display: block;
     width: 34px;
     height: 34px;
@@ -397,8 +397,8 @@ header, main, footer{
     content:"+";   
     display: block;
     position: absolute;
-    top:-7px;
-    right:6px;
+    top:-5px;
+    right:7px;
     font-size:30px;
     color:#666;
     font-weight: 600;
@@ -407,8 +407,8 @@ header, main, footer{
 
 .sum1_exp1, .sum2_exp2, .sum3_exp3, .sum4_exp4{
     display: block;
-    font-size: 14px;
-    margin-left:30px;
+    font-size: 12px;
+    margin-left:20px;
     line-height: 27px;
     font-weight: 600;
     color: #666;
@@ -426,7 +426,7 @@ header, main, footer{
 .sum3_exp3{
     color:#999;
     line-height: 21px;
-    font-size: 14px;
+    font-size: 12px;
     margin-top:-15px;
     margin-bottom:70px;
 
@@ -534,7 +534,7 @@ header, main, footer{
 }
 
 #partners>ul>li>a>img{
-    width: 120px;
+    width: 150px;
     height: auto;
     
 }
@@ -631,7 +631,7 @@ footer{
     height:auto;
     font-size:14px;
     line-height: 70px;
-    text-indent: 25px;
+    text-indent: 20px;
     color:#fff;
     cursor: pointer;
 }
