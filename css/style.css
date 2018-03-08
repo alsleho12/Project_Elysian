@@ -68,13 +68,14 @@ header, main, footer{
 .logo{
     width: 100%;
     height: auto;
+
 }
 
 .logo>a{
     display: block;
-    width: 100%;
-    height: auto;
-    
+    width: 360px;
+    height: 90px;
+    background:url("../images/main2.png") no-repeat;
 }
 
 /* gnb부분 */
