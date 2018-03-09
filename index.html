@@ -92,6 +92,88 @@
                     <li><a href="#">로그인</a></li>
                 </ul> 
             </nav> <!-- #gnb -->
+
+            <nav id="loginPage">
+                <div id="loginPageIn">
+                    <ul>
+                        <li>
+                            <div class="plogo">
+                                <a href="#">
+                                    <p><span class="close">X</span></p>
+                                    <img src="./images/llogo.png" alt="로그인로고">
+                                    <p>도움말</p>
+                                </a>
+                            </div> <!-- .plogo -->
+                        </li>
+
+                        <li>
+                            <div class="page">
+                                <ul>
+                                    <li>
+                                        <input type="text" name="login" id="login" placeholder="기존ID 혹은 이메일ID">
+                                    </li>
+
+                                    <li>
+                                        <input type="password" name="password" id="pw" placeholder="비밀번호를 입력해주세요.">
+                                    </li>
+                                </ul> 
+                            </div> <!-- .page -->
+                        </li>
+
+                        <li>
+                            <div class="l1">
+                                <a href="#">
+                                    로그인
+                                </a>
+                            </div> <!-- .l1 -->
+
+                            <div class="l2">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            회원가입
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            아이디/비밀번호 찾기
+                                        </a>
+                                    </li>
+                                </ul> 
+                            </div> <!-- .l2 -->
+                        </li>
+
+                        <li>
+                            <div class="iconpage">
+                                <ul>
+                                    <li class="picon1">
+                                        <a href="#">
+                                            <img src="./images/na.png" alt="네이버아이콘">
+                                            <span>네이버 계정 로그인</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="picon2">
+                                        <a href="#">
+                                            <img src="./images/fa.png" alt="페이스북아이콘">
+                                            <span>페이스북 계정 로그인</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="picon3">
+                                        <a href="#">
+                                            <img src="./images/po.png" alt="휴대폰아이콘">
+                                            <span>휴대폰 번호 로그인</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> <!-- .iconpage -->
+                        </li>
+                    </ul>
+                </div> <!-- #loginPageIn -->
+            </nav> <!-- #loginPage -->
+            
         </header>
 
 
@@ -392,12 +474,16 @@
 <script>
 
 
-/* 아코디언 1단메뉴 */
+/* gnb아코디언 1단메뉴 */
+
+/* gnb아이콘 클릭하면 로그인화면이 나오고 닫히는 스크립트 */
 $(".nav>a").click(function(){
     var poi = $("#gnb").css("display");
     if(poi == "none"){
-        $("#gnb").show(100).animate({left:"0"});
-        $("#blackbg").fadeIn();    
+        $("#gnb").show(300).animate({left:"0"});
+        $("#blackbg").fadeIn();
+        $("#loginPageIn").fadeOut(400);
+        
     }else if(poi == "block"){
         $("#gnb").animate({left:"-100%"});
         $("#gnb").fadeOut(200);
@@ -406,30 +492,46 @@ $(".nav>a").click(function(){
 
     }
 });
-/* 아코디언 2단메뉴 */
 
+/* 사람아이콘 클릭하면 로그인화면이 나오고 닫히는 스크립트 */
 
-//$("#gnb>ul>li>a").click(function(){
-    //var tg = $(this).siblings(".depth2");
-    /* 1.2단메뉴(.depth2)가 가지고 있는 display의 속성값을 변수안에 저장 */
-    //var dis = tg.css("display")
-    /* 2. depth2에 있는 여러정보가 담겨있는 tg라는 변수를 활용하여 그중 display의
-        속성값을 dis라는 변수 안에 넣어준다 */
-    
-/*     if(dis == "none"){
-        $(".depth2").slideUp();
-        $(this).siblings(".depth2").slideDown();
-        $("#gnb>ul>li>a").removeClass("on");
-        $(this).addClass("on")
+$(".user>a").click(function(){
+    var poi = $("#loginPageIn").css("display");
+    if(poi == "none"){
+        $("#loginPageIn").show(300).animate({right:"0"});
+        $("#blackbg").fadeIn();
+        $("#gnb").fadeOut();
+    }else if(poi == "block"){
+        $("#loginPageIn").animate({right:"-100%"});
+        $("#loginPageIn").fadeOut(400);
+        $("#blackbg").fadeOut();
+
     }
+});
 
-    if(dis == "block"){
-        $(this).siblings(".depth2").slideUp();
-        $(this).removeClass("on");
+/* gnb를 클릭후 맨밑에있는 로그인을 클릭했을때 변환되는 스크립트 */
+
+$("#gnb>ul>li:last-child>a").click(function(){
+    var poi = $("#loginPageIn").css("display");
+    if(poi == "none"){
+        $("#loginPageIn").show(300).animate({right:"0"});
+        $("#blackbg").fadeIn();
+        $("#gnb").fadeOut();
     }
-    
-}); */
- /* 또다른 2단메뉴 설정 */
+});
+
+/* 사람아이콘 클릭후 X표시 클릭시 닫히는 스크립트 */
+
+$(".close").click(function(){
+    var poi = $("#loginPageIn").css("display");
+    if(poi == "block"){
+        $("#loginPageIn").animate({right:"-100%"});
+        $("#loginPageIn").fadeOut(400);
+        $("#blackbg").fadeOut();
+    }
+});
+
+/* gnb 아코디언 2단메뉴 */
  $("#gnb>ul>li>a").click(function(){
     var dis = $(this).siblings(".depth2");
     /* 1.2단메뉴(.depth2)가 가지고 있는 display의 속성값을 변수안에 저장 */

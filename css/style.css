@@ -157,6 +157,189 @@ header, main, footer{
 }
 
 
+/* loginPage부분 */
+
+#loginPage{
+    width: 100%;
+    height: auto;
+    
+}
+
+#loginPageIn{
+    margin: 0 auto;
+    background: #ffffe0;
+    z-index: 100;
+    position: fixed;
+    width: 60%;
+    height: 100%;
+    right:-100%;
+    display:none;
+    z-index: 999;
+}
+
+.plogo{
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+}
+
+.plogo>a{
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+
+.plogo>a>p{
+    font-weight: 600;
+    color: #666;
+}
+
+.plogo>a>img{
+    width: 145px;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.page{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.page>ul>li{
+    width: 100%;
+    height: auto;
+    padding: 4px 0;
+}
+
+
+
+#login, #pw{
+    width: 60%;
+    height: 100%;
+    border: 1px solid #ccc;
+    margin-left: 50px;
+    font-size: 12px;
+    padding: 10px 0;
+    text-indent: 10px;
+    color: #ccc;
+}
+
+.l1{
+    width: 60%;
+    height: auto;
+    margin-left: 50px;
+    padding: 5px 0;
+}
+
+.l1>a{
+    display: block;
+    width: 100%;
+    height: auto;
+    text-indent: 67px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #ffff99;
+    padding: 3px 0;
+    font-weight: 600;
+    
+}
+
+.l2{
+    width: 60%;
+    height: auto;
+    margin-left:53px;
+}
+.l2>ul{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.l2>ul>li:first-child>a{
+    padding-left:0;
+    
+}
+
+.l2>ul>li:last-child>a{
+    padding-left:5px;
+    border-right:0;
+    
+    
+}
+
+.l2>ul>li>a{
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    border-right: 1px solid #ccc;
+    padding: 0px 1px;
+    line-height: 12px;
+
+}
+
+.iconpage{
+    width: 60%;
+    height: auto;
+    margin-left: 50px;
+    padding: 20px 0;
+}
+
+
+.iconpage>ul>li{
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+    margin-bottom:15px;
+    
+}
+
+.iconpage>ul>li>a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconpage>ul>li:nth-child(1){
+    background: #34ff33;
+}
+
+.iconpage>ul>li:nth-child(2){
+    background: #0362ad;    
+}
+
+.iconpage>ul>li:nth-child(3){
+    background: #ccc;
+    
+}
+
+.iconpage>ul>li>a>img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+
+.iconpage>ul>li>a>span{
+    width: 100%;
+    display: block;
+    font-size: 10px;
+    padding: 5px 0;
+    font-weight: 600;
+    text-align: center;
+    color:#fff;
+   
+}
+
+
+
+
+
+
+
 /* Main부분 */
 
 #mainVisuel{
