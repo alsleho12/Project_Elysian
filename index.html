@@ -475,7 +475,6 @@ $(".nav>a").click(function(){
         $("#gnb").show(300).animate({left:"0"});
         $("#blackbg").fadeIn();
         $("#loginPageIn").fadeOut(400);
-        
     }else if(poi == "block"){
         $("#gnb").animate({left:"-100%"});
         $("#gnb").fadeOut(200);
@@ -493,10 +492,12 @@ $(".user>a").click(function(){
         $("#loginPageIn").show(300).animate({right:"0"});
         $("#blackbg").fadeIn();
         $("#gnb").fadeOut();
+        $(".depth2").slideUp();
     }else if(poi == "block"){
         $("#loginPageIn").animate({right:"-100%"});
         $("#loginPageIn").fadeOut(400);
         $("#blackbg").fadeOut();
+        $(".depth2").slideUp();
 
     }
 });
@@ -509,6 +510,7 @@ $("#gnb>ul>li:last-child>a").click(function(){
         $("#loginPageIn").show(300).animate({right:"0"});
         $("#blackbg").fadeIn();
         $("#gnb").fadeOut();
+        $(".depth2").slideUp();
     }
 });
 
@@ -520,6 +522,7 @@ $(".close").click(function(){
         $("#loginPageIn").animate({right:"-100%"});
         $("#loginPageIn").fadeOut(400);
         $("#blackbg").fadeOut();
+        $(".depth2").slideUp();
     }
 });
 
