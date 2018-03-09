@@ -170,7 +170,7 @@ header, main, footer{
     background: #ffffe0;
     z-index: 100;
     position: fixed;
-    width: 60%;
+    width: 80%;
     height: 100%;
     right:-100%;
     display:none;
@@ -198,7 +198,7 @@ header, main, footer{
     width: 145px;
     height: 60px;
     margin-top: 50px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .page{
@@ -217,10 +217,10 @@ header, main, footer{
 
 
 #login, #pw{
-    width: 60%;
+    width: 80%;
     height: 100%;
     border: 1px solid #ccc;
-    margin-left: 50px;
+    margin-left: 38px;
     font-size: 12px;
     padding: 10px 0;
     text-indent: 10px;
@@ -228,9 +228,9 @@ header, main, footer{
 }
 
 .l1{
-    width: 60%;
+    width: 80%;
     height: auto;
-    margin-left: 50px;
+    margin: 0 auto;
     padding: 5px 0;
 }
 
@@ -238,37 +238,32 @@ header, main, footer{
     display: block;
     width: 100%;
     height: auto;
-    text-indent: 67px;
+    text-align: center;
     border: 1px solid #ccc;
     border-radius: 5px;
     background: #ffff99;
-    padding: 3px 0;
+    padding: 5px 0;
     font-weight: 600;
     
 }
 
 .l2{
-    width: 60%;
+    width: 80%;
     height: auto;
-    margin-left:53px;
+    margin: 0 auto;
 }
 .l2>ul{
-    display: flex;
-    align-items: center;
+    width: 100%;
+    height: auto;
     padding: 15px 0;
 }
 
-.l2>ul>li:first-child>a{
-    padding-left:0;
-    
+.l2>ul>li{
+    display: flex;
+    align-items: baseline;
+    margin-left: 58px;
 }
 
-.l2>ul>li:last-child>a{
-    padding-left:5px;
-    border-right:0;
-    
-    
-}
 
 .l2>ul>li>a{
     display: block;
@@ -276,15 +271,25 @@ header, main, footer{
     height: auto;
     font-size: 12px;
     border-right: 1px solid #ccc;
-    padding: 0px 1px;
-    line-height: 12px;
-
+    line-height: 13px;
+    text-align: center;
 }
 
+.l2>ul>li>a:first-child{
+    width: 25%;
+}
+
+.l2>ul>li>a:last-child{
+    width: 52%;
+    border-right:none; 
+}
+
+
+
 .iconpage{
-    width: 60%;
+    width: 80%;
     height: auto;
-    margin-left: 50px;
+    margin: 0 auto;
     padding: 20px 0;
 }
 
@@ -319,15 +324,15 @@ header, main, footer{
 .iconpage>ul>li>a>img{
     width: 20px;
     height: 20px;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 
 .iconpage>ul>li>a>span{
     width: 100%;
     display: block;
-    font-size: 10px;
-    padding: 5px 0;
+    font-size: 12px;
+    padding: 10px 0;
     font-weight: 600;
     text-align: center;
     color:#fff;
